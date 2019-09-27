@@ -16,17 +16,7 @@ module.exports = {
         query: {
           cacheDirectory: true,
           plugins: [
-            ['react-transform',
-              {
-                transforms: [
-                  {
-                    transform: 'react-transform-hmr',
-                    imports: ['react'],
-                    locals: ['module']
-                  }
-                ]
-              }
-            ]
+            ['react-hot-loader/babel']
           ]
         }
       }

@@ -44,7 +44,6 @@ view-example: build-example
 lint:
 	./node_modules/.bin/flow
 	@$(BIN)/eslint --ext .js,.jsx $(LIB) $(TEST)
-	@$(BIN)/valiquire $(LIB)
 
 test:
 	@$(BIN)/jest
